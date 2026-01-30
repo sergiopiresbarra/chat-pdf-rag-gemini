@@ -5,11 +5,11 @@ from dotenv import load_dotenv
 # Importações do LangChain e Google
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains.retrieval import create_retrieval_chain
 from langchain_core.prompts import ChatPromptTemplate
 import tempfile
 
